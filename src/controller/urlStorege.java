@@ -2,7 +2,7 @@ package controller;
 
 public enum urlStorege
 {
-	INDEX("IndexSwitch"), BUYER("BuyerSwitch"), IMAGE("ImageSwitch"), RANKMC("RankSwitch"), DETAIL("DetailSwitch"), NEWS("NewsSwitch");
+	userCkeck("userCheck"), jongminMainPage("BuyerSwitch"), unoMainPage("unoMain"), hhjMainPage("RankSwitch"), cmhMainPage("DetailSwitch");
 	private final String value;
 	private final String PACK_PATH = "com.aPlatform.controller.service.finance.model.";
 	urlStorege(String value)

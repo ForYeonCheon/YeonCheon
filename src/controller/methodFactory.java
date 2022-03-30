@@ -1,6 +1,6 @@
 package controller;
 
-public interface servletFactory
+public interface methodFactory
 {
 	public Object getDo();
 	public Object postDo();

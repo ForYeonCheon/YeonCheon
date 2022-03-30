@@ -12,8 +12,8 @@
 			<h1>Hello world!!</h1>
 			<h5>this server is uno's private server</h5>
 			<input type="text" name='name' id='inputText' style='height: 40px; width: 200px; font-size: 25px; color: #d30101'>
-<!-- 			<button id='bntNext'>이동(고장)</button> -->
-						<button type="submit" >이동(고장)</button>
+			<!-- 			<button id='bntNext'>이동(고장)</button> -->
+			<button type="submit">이동(고장)</button>
 			</br>
 			<a href='/cmh/index.jsp' style='font-size: 25px'>최민호</a>
 			</br>
@@ -21,7 +21,7 @@
 			</br>
 			<a href='/hhj/index.jsp' style='font-size: 25px'>한형진</a>
 			</br>
-			<a href='/uno/index.jsp' style='font-size: 25px'>김은호</a>
+			<a href='unoMain' style='font-size: 25px'>김은호</a>
 			</br>
 		</div>
 	</form>

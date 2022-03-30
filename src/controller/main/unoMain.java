@@ -1,8 +1,8 @@
-package controller.check;
+package controller.main;
 
 import controller.methodFactory;
 
-public class checkUser implements methodFactory
+public class unoMain implements methodFactory
 {
 
 	@Override
