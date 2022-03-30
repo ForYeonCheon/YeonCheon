@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -11,7 +12,8 @@
 			<h1>Hello world!!</h1>
 			<h5>this server is uno's private server</h5>
 			<input type="text" name='name' id='inputText' style='height: 40px; width: 200px; font-size: 25px; color: #d30101'>
-			<button type="submit">이동(고장)</button>
+<!-- 			<button id='bntNext'>이동(고장)</button> -->
+						<button type="submit" >이동(고장)</button>
 			</br>
 			<a href='/cmh/index.jsp' style='font-size: 25px'>최민호</a>
 			</br>
@@ -25,3 +27,23 @@
 	</form>
 </body>
 </html>
+<script>
+	document.getElementById('bntNext').addEventListener(
+			'click',
+			function() {
+				$.ajax({
+					type : "GET",
+					url : "main/checkUser.jsp?name="
+							+ document.getElementById('inputText').value,
+					dataType : 'JSON',
+					async : false,
+					contentType : 'application/json; charset=utf-8',
+					success : function(data) {
+						alert('통신성공!!');
+					},
+					error : function() {
+						alert('통신실패!!');
+					}
+				});
+			});
+</script>

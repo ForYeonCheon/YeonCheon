@@ -26,7 +26,14 @@ public class HandleSocket
 		String[] firstLineArgs = line.split(" ");
 		request.setMethod(firstLineArgs[0]);
 		request.setPath(firstLineArgs[1]);
-
+		if(request.getMethod().equalsIgnoreCase("get"))
+		{
+			if(request.getPath().contains("?"))
+			{
+				String[] tmpArr = request.getPath().split("\\?");
+				request.setPath(tmpArr[0]);
+			}
+		}
 		while ((line = br.readLine()) != null)
 		{
 			if("".equals(line))
