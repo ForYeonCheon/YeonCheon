@@ -2,6 +2,6 @@ package controller;
 
 public interface methodFactory
 {
-	public Object getDo();
-	public Object postDo();
+	public Object getDo(Object request);
+	public Object postDo(Object request);
 }

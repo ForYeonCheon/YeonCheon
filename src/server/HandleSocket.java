@@ -3,7 +3,6 @@ package server;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -11,9 +10,11 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+import controller.MileStone;
+
 public class HandleSocket
 {
-	public void excute(Socket client) throws IOException
+	public void excute(Socket client) throws Exception
 	{
 		OutputStream out = client.getOutputStream(); // 클라이언트에게 데이터를 보내기 위한 작업
 		PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
@@ -31,9 +32,24 @@ public class HandleSocket
 			if(request.getPath().contains("?"))
 			{
 				String[] tmpArr = request.getPath().split("\\?");
-				request.setPath(tmpArr[0]);
+				if(tmpArr[0].startsWith("/"))
+				{
+					tmpArr[0].replaceFirst("/", "");
+					request.setPath(tmpArr[0]);
+				}
 			}
+			else
+			{
+				if(request.getPath().startsWith("/") && request.getPath().length() > 1)
+				{
+					String tmp = request.getPath().replaceFirst("/", "");
+					request.setPath(tmp);
+				}
+			}
+			String path = (String) MileStone.checkMileStone(request.getPath(), null);
+			request.setPath(path);
 		}
+
 		while ((line = br.readLine()) != null)
 		{
 			if("".equals(line))

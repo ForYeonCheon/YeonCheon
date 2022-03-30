@@ -2,9 +2,10 @@ package controller;
 
 import java.lang.reflect.Method;
 
+
 public class MileStone
 {
-	public boolean checkMileStone(String url, Object request) throws Exception
+	public static Object checkMileStone(String url, Object request) throws Exception
 	{
 		for (urlStorege str : urlStorege.values())
 		{
@@ -12,8 +13,8 @@ public class MileStone
 			{
 				Class<?> testClass = Class.forName(str.getValue());
 				Object newObj = testClass.newInstance();
-				Method method = testClass.getDeclaredMethod("getDo");
-				method.invoke(newObj, request);
+				Method method = testClass.getDeclaredMethod("getDo", Object.class);
+				return method.invoke(newObj, request);
 			}
 		}
 		return true;
