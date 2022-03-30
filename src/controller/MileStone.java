@@ -2,7 +2,6 @@ package controller;
 
 import java.lang.reflect.Method;
 
-
 public class MileStone
 {
 	public static Object checkMileStone(String url, Object request) throws Exception
@@ -17,6 +16,6 @@ public class MileStone
 				return method.invoke(newObj, request);
 			}
 		}
-		return true;
+		return "/";
 	}
 }

@@ -2,7 +2,7 @@ package controller;
 
 public enum urlStorege
 {
-	userCkeck("userCheck"), jmMain("BuyerSwitch"), unoMain("unoMain"), hhjMain("RankSwitch"), cmhMain("DetailSwitch");
+	userCkeck("userCheck"), jmMain("jmMain"), unoMain("unoMain"), hhjMain("hhjMain"), cmhMain("cmhMain");
 	private final String value;
 	private final String PACK_PATH = "controller.main.";
 	urlStorege(String value)

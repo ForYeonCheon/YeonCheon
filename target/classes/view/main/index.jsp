@@ -15,11 +15,11 @@
 			<!-- 			<button id='bntNext'>이동(고장)</button> -->
 			<button type="submit">이동(고장)</button>
 			</br>
-			<a href='/cmh/index.jsp' style='font-size: 25px'>최민호</a>
+			<a href='cmhMain' style='font-size: 25px'>최민호</a>
 			</br>
-			<a href='/kjm/index.jsp' style='font-size: 25px'>김종민</a>
+			<a href='jmMain' style='font-size: 25px'>김종민</a>
 			</br>
-			<a href='/hhj/index.jsp' style='font-size: 25px'>한형진</a>
+			<a href='hhjMain' style='font-size: 25px'>한형진</a>
 			</br>
 			<a href='unoMain' style='font-size: 25px'>김은호</a>
 			</br>
