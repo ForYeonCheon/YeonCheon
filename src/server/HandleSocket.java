@@ -60,6 +60,7 @@ public class HandleSocket
 			{
 				String[] tmpArr = request.getPath().split("\\?");
 				request.setPath(tmpArr[0].replaceFirst("/", ""));
+				request.setContents(tmpArr[1]);
 			}
 			else
 			{
