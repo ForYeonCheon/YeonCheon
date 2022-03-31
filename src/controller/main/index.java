@@ -3,15 +3,14 @@ package controller.main;
 import controller.methodFactory;
 import server.HttpRequest;
 
-public class jmMain implements methodFactory
+public class index implements methodFactory
 {
 
 	@Override
 	public HttpRequest getDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
-		request.setResponseContents("/kjm/index.jsp");
-		return request;
+		return null;
 	}
 
 	@Override

@@ -54,7 +54,6 @@ public class HandleSocket
 						}
 		}
 
-		Object result = null;
 		if(!"/".equals(request.getPath()))
 		{
 			if(request.getPath().contains("?"))
@@ -66,18 +65,12 @@ public class HandleSocket
 			{
 				request.setPath(request.getPath().replaceFirst("/", ""));
 			}
-			result = MileStone.checkMileStone(request);
-			if(result.getClass().toString().contains("String"))
-			{
-				request.setPath((String) result);
-			}
 		}
 		else
 		{
-			request.setPath("/main/index.jsp");
+			request.setPath("index");
 		}
-		request.setPath(path);
-
+		HttpRequest result = MileStone.checkUrlAndHandle(request);
 		System.out.println(request);
 
 		String path = System.getProperty("user.dir");
@@ -87,15 +80,6 @@ public class HandleSocket
 		String baseDir = path;
 		String fileName = request.getPath();
 
-		if("/".equals(fileName))
-		{
-			fileName = "/main/index.jsp";
-		}
-		else
-			if(fileName.endsWith(".png"))
-			{ // png 이미지일때
-				fileName = request.getPath();
-			}
 		fileName = baseDir + fileName;
 		System.out.println();
 		System.out.println(fileName);

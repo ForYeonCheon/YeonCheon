@@ -1,19 +1,22 @@
 package controller.main;
 
 import controller.methodFactory;
+import server.HttpRequest;
 
 public class hhjMain implements methodFactory
 {
 
 	@Override
-	public Object getDo(Object request)
+	public HttpRequest getDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
-		return "/hhj/index.jsp";
+
+		request.setResponseContents("/hhj/index.jsp");
+		return request;
 	}
 
 	@Override
-	public Object postDo(Object request)
+	public HttpRequest postDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
 		return null;

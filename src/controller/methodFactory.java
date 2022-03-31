@@ -4,6 +4,6 @@ import server.HttpRequest;
 
 public interface methodFactory
 {
-	public Object getDo(HttpRequest request);
-	public Object postDo(HttpRequest request);
+	public HttpRequest getDo(HttpRequest request);
+	public HttpRequest postDo(HttpRequest request);
 }

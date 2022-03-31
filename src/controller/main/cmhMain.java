@@ -1,19 +1,21 @@
 package controller.main;
 
 import controller.methodFactory;
+import server.HttpRequest;
 
 public class cmhMain implements methodFactory
 {
 
 	@Override
-	public Object getDo(Object request)
+	public HttpRequest getDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
-		return "/cmh/index.jsp";
+		request.setResponseContents("/cmh/index.jsp");
+		return request;
 	}
 
 	@Override
-	public Object postDo(Object request)
+	public HttpRequest postDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
 		return null;
