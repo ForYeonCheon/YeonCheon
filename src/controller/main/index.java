@@ -10,7 +10,8 @@ public class index implements methodFactory
 	public HttpRequest getDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
-		return null;
+		request.setResponseUrl("/main/index.jsp");
+		return request;
 	}
 
 	@Override

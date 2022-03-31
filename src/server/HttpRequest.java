@@ -105,8 +105,8 @@ public class HttpRequest
 	@Override
 	public String toString()
 	{
-		return "HttpRequest{" + "method='" + method + '\'' + ", path='" + path + '\'' + ", host='" + host + '\'' + ", contentLength='" + contentLength
-				+ '\'' + ", userAgent='" + userAgent + '\'' + ", contentType='" + contentType + '\'' + '}';
+		return "HttpRequest [method=" + method + ", path=" + path + ", host=" + host + ", contentLength=" + contentLength + ", userAgent=" + userAgent
+				+ ", contentType=" + contentType + ", contents=" + contents + ", responseUrl=" + responseUrl + ", responseContents="
+				+ responseContents + "]";
 	}
-
 }

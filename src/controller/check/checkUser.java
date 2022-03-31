@@ -1,19 +1,20 @@
 package controller.check;
 
 import controller.methodFactory;
+import server.HttpRequest;
 
 public class checkUser implements methodFactory
 {
 
 	@Override
-	public Object getDo(Object request)
+	public HttpRequest getDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Object postDo(Object request)
+	public HttpRequest postDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
 		return null;

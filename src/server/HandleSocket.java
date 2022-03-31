@@ -70,18 +70,16 @@ public class HandleSocket
 		{
 			request.setPath("index");
 		}
-		HttpRequest result = MileStone.checkUrlAndHandle(request);
 		System.out.println(request);
+		HttpRequest response = MileStone.checkUrlAndHandle(request);
+		System.out.println("요청성공 응답출력");
+		System.out.println(response);
 
 		String path = System.getProperty("user.dir");
 		String[] tmp = path.split("src");
 		path = tmp[0] + "\\src\\view";
 
-		String baseDir = path;
-		String fileName = request.getPath();
-
-		fileName = baseDir + fileName;
-		System.out.println();
+		String fileName = path + response.getResponseUrl();
 		System.out.println(fileName);
 
 		String contentType = "text/html; charset=UTF-8";

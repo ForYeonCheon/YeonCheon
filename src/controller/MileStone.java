@@ -13,7 +13,7 @@ public class MileStone
 			if(request.getPath().equalsIgnoreCase(str.toString()))
 			{
 				Class<?> testClass = Class.forName(str.getValue());
-				HttpRequest newObj = (HttpRequest) testClass.newInstance();
+				Object newObj = testClass.newInstance();
 				Method method = testClass.getDeclaredMethod("getDo", HttpRequest.class);
 				return (HttpRequest) method.invoke(newObj, request);
 			}
