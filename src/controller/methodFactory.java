@@ -1,7 +1,9 @@
 package controller;
 
+import server.HttpRequest;
+
 public interface methodFactory
 {
-	public Object getDo(Object request);
-	public Object postDo(Object request);
+	public Object getDo(HttpRequest request);
+	public Object postDo(HttpRequest request);
 }

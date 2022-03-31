@@ -2,13 +2,15 @@ package controller;
 
 import java.lang.reflect.Method;
 
+import server.HttpRequest;
+
 public class MileStone
 {
-	public static Object checkMileStone(String url, Object request) throws Exception
+	public static Object checkMileStone(HttpRequest request) throws Exception
 	{
 		for (urlStorege str : urlStorege.values())
 		{
-			if(url.equalsIgnoreCase(str.toString()))
+			if(request.getPath().equalsIgnoreCase(str.toString()))
 			{
 				Class<?> testClass = Class.forName(str.getValue());
 				Object newObj = testClass.newInstance();

@@ -67,17 +67,15 @@ public class HandleSocket
 				request.setPath(request.getPath().replaceFirst("/", ""));
 			}
 			result = MileStone.checkMileStone(request);
+			if(result.getClass().toString().contains("String"))
+			{
+				request.setPath((String) result);
+			}
 		}
 		else
 		{
-			if(request.getPath().startsWith("/") && request.getPath().length() > 1)
-			{
-				String tmp = request.getPath().replaceFirst("/", "");
-				request.setPath(tmp);
-			}
+			request.setPath("/main/index.jsp");
 		}
-
-		String path = (String) MileStone.checkMileStone(request.getPath(), null);
 		request.setPath(path);
 
 		System.out.println(request);
