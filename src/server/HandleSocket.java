@@ -27,35 +27,10 @@ public class HandleSocket
 		String[] firstLineArgs = line.split(" ");
 		request.setMethod(firstLineArgs[0]);
 		request.setPath(firstLineArgs[1]);
-		if(request.getMethod().equalsIgnoreCase("get"))
-		{
-			if(request.getPath().contains("?"))
-			{
-				String[] tmpArr = request.getPath().split("\\?");
-				if(tmpArr[0].startsWith("/"))
-				{
-					tmpArr[0].replaceFirst("/", "");
-					request.setPath(tmpArr[0]);
-				}
-			}
-			else
-			{
-				if(request.getPath().startsWith("/") && request.getPath().length() > 1)
-				{
-					String tmp = request.getPath().replaceFirst("/", "");
-					request.setPath(tmp);
-				}
-			}
-			String path = (String) MileStone.checkMileStone(request.getPath(), null);
-			request.setPath(path);
-		}
 
 		while ((line = br.readLine()) != null)
 		{
-			if("".equals(line))
-			{ // 헤더를 읽고 빈줄을 만나면
-				break;
-			}
+			if("".equals(line)) break;
 			String[] headerArray = line.split(" ");
 			if(headerArray[0].startsWith("Host:"))
 			{
@@ -78,6 +53,33 @@ public class HandleSocket
 							request.setContentType(headerArray[1].trim());
 						}
 		}
+
+		Object result = null;
+		if(!"/".equals(request.getPath()))
+		{
+			if(request.getPath().contains("?"))
+			{
+				String[] tmpArr = request.getPath().split("\\?");
+				request.setPath(tmpArr[0].replaceFirst("/", ""));
+			}
+			else
+			{
+				request.setPath(request.getPath().replaceFirst("/", ""));
+			}
+			result = MileStone.checkMileStone(request);
+		}
+		else
+		{
+			if(request.getPath().startsWith("/") && request.getPath().length() > 1)
+			{
+				String tmp = request.getPath().replaceFirst("/", "");
+				request.setPath(tmp);
+			}
+		}
+
+		String path = (String) MileStone.checkMileStone(request.getPath(), null);
+		request.setPath(path);
+
 		System.out.println(request);
 
 		String path = System.getProperty("user.dir");
