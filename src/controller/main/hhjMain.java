@@ -11,7 +11,7 @@ public class hhjMain implements methodFactory
 	{
 		// TODO Auto-generated method stub
 
-		request.setResponseContents("/hhj/index.jsp");
+		request.setResponseUrl("/hhj/index.jsp");
 		return request;
 	}
 

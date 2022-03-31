@@ -10,7 +10,7 @@ public class unoMain implements methodFactory
 	public HttpRequest getDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
-		request.setResponseContents("/uno/index.jsp");
+		request.setResponseUrl("/uno/index.jsp");
 		return request;
 	}
 

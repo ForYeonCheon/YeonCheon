@@ -10,7 +10,7 @@ public class cmhMain implements methodFactory
 	public HttpRequest getDo(HttpRequest request)
 	{
 		// TODO Auto-generated method stub
-		request.setResponseContents("/cmh/index.jsp");
+		request.setResponseUrl("/cmh/index.jsp");
 		return request;
 	}
 
