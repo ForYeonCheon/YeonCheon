@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamepaceSchemaLocation="attribute-default.xsd" sno="s100">
+	<koreanNm>김은호</koreanNm>
+	<englishNm>Kim uno</englishNm>
+</student>
