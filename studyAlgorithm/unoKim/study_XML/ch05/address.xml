@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="simple-type-restriction.xsd">
+	<city>서울</city>
+	<apartment>삼성 레미안</apartment>
+	<room>21</room>
+	<zipcode>123-456</zipcode>
+</address>

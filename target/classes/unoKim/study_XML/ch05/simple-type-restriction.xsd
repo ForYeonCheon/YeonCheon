@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="address">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="city" type="xsd:string"></xsd:element>
+				<xsd:element name="apartment" type="aptType"></xsd:element>
+				<xsd:element name="room" type="intType"></xsd:element>
+				<xsd:element name="zipcode" type="zipcodeType"></xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="zipcodeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\d{3}-\d{3}"></xsd:pattern>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="intType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="1"></xsd:minInclusive>
+			<xsd:maxInclusive value="50"></xsd:maxInclusive>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="aptType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="현대 힐스테이트"></xsd:enumeration>
+			<xsd:enumeration value="대우 푸르지오"></xsd:enumeration>
+			<xsd:enumeration value="삼성 레미안"></xsd:enumeration>
+			<xsd:enumeration value="대림 e편한"></xsd:enumeration>
+			<xsd:enumeration value="롯데 캐슬"></xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
