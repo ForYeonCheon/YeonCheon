@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student SYSTEM "student.dtd">
+<student>
+	<sno>s100</sno>
+	<name>하지원</name>
+	<age>44</age>
+	<phone>010-4499-7773</phone>
+	<address>경기 성남</address>
+</student>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT movies (movie+)>
+<!ELEMENT movie (name,company,hero+,price,date)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT company (address,phone,fax?,url?)>
+<!ATTLIST company name CDATA #REQUIRED>
+
+<!ELEMENT address (city,gu,dong)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT gu (#PCDATA)>
+<!ELEMENT dong (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT fax ANY>
+<!ELEMENT url ANY>
+<!ATTLIST url href CDATA #IMPLIED>
+<!ELEMENT hero (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price unit CDATA #FIXED "won">
+
+<!ELEMENT date (year,month,day)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+

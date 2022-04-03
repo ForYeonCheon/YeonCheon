@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stdent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="student.xsd">
+	<sno>s100</sno>
+	<name>김은호</name>
+	<age>44</age>
+	<phone>010-4444-3333</phone>
+	<address>경기 성남</address>
+	<qwe></qwe>
+</stdent>

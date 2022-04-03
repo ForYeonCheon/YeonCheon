@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE movies SYSTEM "movies.dtd">
+<movies>
+	<movie>
+		<name>parasite</name>
+		<company name="cj">
+			<address>
+				<city>soul</city>
+				<gu>
+					jung
+				</gu>
+				<dong>sowol</dong>
+			</address>
+			<phone>01-0448-789</phone>
+			<fax>02-4897-786</fax>
+			<url href='http:www.naver.com' />
+		</company>
+		<hero>song</hero>
+		<hero>lee</hero>
+		<price unit="won">12,000</price>
+		<date>
+			<year>2019</year>
+			<month>5</month>
+			<day>30</day>
+		</date>
+	</movie>
+</movies>

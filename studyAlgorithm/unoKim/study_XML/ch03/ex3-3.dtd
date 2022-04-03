@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ATTLIST 요소이름 속성이름 속성타입 속성_기본값>
+<!ELEMENT square EMPTY>
+<!ATTLIST square width CDATA "0">
+... Valid XML ...
+<squre width="100" />
+
+<!-- 토큰 -->
+<!ATTLIST 이름 학번 ID #IMPLIED>
+<이름 학번="20190001">홍길동</이름>
+
+<!-- IDREF 타입 사용 -->
+<!ATTLIST 이름 학번 ID #IMPLIED>
+<!ATTLIST 학과 회장 IDREF #IMPLED>
+<이름 학번="20180001">김은호</이름>
+<이름 학번="20180002">김찬호</이름>
+<학과 회장="20180002">컴퓨터공학과</학과>
+
+<!-- IDREFS타입 -->
+<!ATTLIST 이름 학번 ID #IMPLIED>
+<!ATTLIST 학과 회장 IDREFS #IMPLED>
+<이름 학번="20180001">김은호</이름>
+<이름 회장="20180002">김건호</이름>
+<이름 학번="20180003">김찬호</이름>
+<학과 간부="20180001 2018002">컴퓨터공학과</학과>
+
+<!-- NM토큰(Name TOKEN) -->
+<!-- 별명을 사용함 -->
+<!-- 특수문자와 공백문자의 사용이 불가함 -->
+<!ATTLIST 이름 별명 NMTOKEN #IMPLIED>
+<이름 별명="001번까도남">김은호</이름>
+<이름 별명="훈남">김건호</이름>
+<!-- NM토큰복수(Name TOKENS) -->
+<!-- NMTOKEN의 복수형태로 IDREFS와 같이 NMTOKEN값들을 공백으로 구분하여 여러개를 연속적으로 사용함 -->
+<!ATTLIST 이름 별명 NMTOKENS #IMPLIED>
+<이름 별명="천재 날쎈제비">김은호</이름>

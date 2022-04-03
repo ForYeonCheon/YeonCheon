@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE booklist SYSTEM "ex2-2.dtd">
+<booklist>
+	<book>
+		<title>
+			Java &amp; XML 3%lt; 5
+		</title>
+		<author>
+			Mr. #x9 hong
+		</author>
+		<publisher>preshell </publisher>
+		<price>23,000</price>
+	</book>
+</booklist>

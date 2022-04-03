@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist SYSTEM "ex3-6.dtd">
+<booklist>
+	<book>
+		<title>태백산맥 </title>
+		<author>jjr</author>
+		<image type="png" src="book1.png"/>
+	</book>
+	<book>
+		<title>공정하다는 착각 </title>
+		<author>mlk sandle</author>
+		<image type="bmp" src="book2.bmp"/>
+	</book>
+	<book>
+		<title>the 4th revolution </title>
+		<author>cloud</author>
+		<image type="jpeg" src="book3.jpeg"/>
+	</book>
+		
+</booklist>
