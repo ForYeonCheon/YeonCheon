@@ -118,7 +118,6 @@ public class HandleSocket
 			out.write(buffer, 0, readCount);
 		}
 		out.flush();
-
 		out.close();
 		in.close();
 		client.close(); // 클라이언트와 접속이 close된다.

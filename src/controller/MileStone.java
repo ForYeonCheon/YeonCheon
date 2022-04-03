@@ -14,8 +14,16 @@ public class MileStone
 			{
 				Class<?> testClass = Class.forName(str.getValue());
 				Object newObj = testClass.newInstance();
-				Method method = testClass.getDeclaredMethod("getDo", HttpRequest.class);
-				return (HttpRequest) method.invoke(newObj, request);
+				if(request.getMethod().equalsIgnoreCase("get"))
+				{
+					Method method = testClass.getDeclaredMethod("getDo", HttpRequest.class);
+					return (HttpRequest) method.invoke(newObj, request);
+				}
+				else
+				{ //포스트는 나중에..
+					Method method = testClass.getDeclaredMethod("getPost", HttpRequest.class);
+					return (HttpRequest) method.invoke(newObj, request);
+				}
 			}
 		}
 		return request;
