@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="이름" type="xsd:string" />
+	<xsd:element name="나이" type="xsd:integer" />
+	<xsd:element name="주소" type="xsd:string" />
+	<xsd:element name="성별" type="xsd:string" />
+</xsd:schema>
