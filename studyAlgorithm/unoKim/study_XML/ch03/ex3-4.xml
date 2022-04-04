@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students[<!ELEMENT student (univ,student)>
+<!ELEMENT univ (#PCDATA)>
+<!ELEMENT student (sno,name,age,phone,address)>
+<!ELEMENT sno (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ENTIT univ_address "서울 성동구 행당동 한양대학교">
+]>
+
+<student>
+	<univ>&univ_address</univ>
+</student>

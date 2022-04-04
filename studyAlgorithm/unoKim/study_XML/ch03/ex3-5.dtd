@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY % student_list "(sno,name,age,phone,address)">
+<!ELEMENT students (univ,student)>
+<!ELEMENT univ (#PCDATA)>
+<!ELEMENT student %student_list;>
+<!ELEMENT sno (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT address (#PCDATA)>

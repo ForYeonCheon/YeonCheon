@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="list.xsd">
+	<groupName>XML동아리 임원</groupName>
+	<member>s100 s200 s300 s400</member>
+</student>

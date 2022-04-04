@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unbiversitylist>
+	<hycu>
+		<name>HYCU</name>
+		<address>Seoul</address>
+	</hycu>
+	<hanyang>
+		<name>HanyangUniv.</name>
+		<address>Seoul</address>
+	</hanyang>
+	<helloword><!--comment -->
+		<name>unoKim
+		</name>
+		<age>
+			28
+		</age>
+		<height>
+			183
+		</height>
+		<weight>
+			90
+		</weight>
+	</helloword>
+</unbiversitylist>

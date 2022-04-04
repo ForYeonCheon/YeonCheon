@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="주소" type="addressType">
+		<!-- ^^^^^^^^^^^익명인데 타입을 써서 오류가 나타난다. -->
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="도" type="xsd:string" />
+				<xsd:element name="시" type="xsd:string" />
+				<xsd:element name="동" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

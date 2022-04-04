@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<booklist>
+	<book kind='computer'>
+		<title>
+			Java XML
+		</title>
+		<author>
+			Mr.hong
+		</author>
+		<publisher>preshell</publisher>
+		<price>23,000</price>
+	</book>
+</booklist>

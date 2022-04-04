@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!NOTATION png PUBLIC "image/png" "photoshop.exe">
+<!NOTATION jpeg PUBLIC "image/jpeg" "paintshop.exe">
+<!NOTATION bmp PUBLIC "image/bmp" "paint.exe">
+
+<!ELEMENT booklist (book*)>
+<!ELEMENT book (title,author,image)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image
+src CDATA #REQUIRED
+type NOTATION (png|jpeg|bmp) #REQUIRED>

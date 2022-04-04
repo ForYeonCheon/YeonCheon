@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orderInfo xmlns="http://www.naver.com/2022/orderMl"
+	xmlns:customer="http://www.naver.com/2022/custMl"
+	xmlns:product="http://www.naver.com/2022/prodMl">
+	<orderNumb>101</orderNumb>
+	<orderCnt>1</orderCnt>
+	<payment>
+		<method>cash</method>
+		<cost>350,000,000</cost>
+	</payment>
+</orderInfo>

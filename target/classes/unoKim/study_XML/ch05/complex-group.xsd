@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="student">
+		<xsd:complexType>
+			<xsd:group ref="nameGroup"></xsd:group>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:group name="nameGroup">
+		<xsd:sequence>
+			<xsd:element name="firstNm" type="xsd:string"></xsd:element>
+			<xsd:element name="lastNm" type="xsd:string"></xsd:element>
+		</xsd:sequence>
+	</xsd:group>
+</xsd:schema>

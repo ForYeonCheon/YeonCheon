@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<booklist xmlns="http://naver.com/2022/bookMl"
+	xmlns:bml="http://naver.com/bookMl">
+	<book bml:id="b1" bml:kind="philasophy">
+		<title>공정하다는 착각</title>
+		<author>마이클 샌델</author>
+	</book>
+	<book bml:id="b2" bml:kind="교재">
+		<title>자바 개발자를 위한 xml</title>
+		<author>신민철</author>
+	</book>
+</booklist>

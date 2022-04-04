@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<주문:주문정보 xmlns:주문="http://www.wbshim.co.kr/2022/OrderMl"
+	xmlns:고객="http://www.wbshim.co.kr/2022/CustomerMl"
+	xmlns:상품="http://www.wbshim.co.kr/2022/ProductML">
+	<주문:주문번호>101</주문:주문번호>
+	<주문:한정수량>1</주문:한정수량>
+	<주문:결제>
+		<주문:방법>현금</주문:방법>
+		<주문:금액>3,500,000</주문:금액>
+	</주문:결제>
+</주문:주문정보>

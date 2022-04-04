@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "ex3-5.dtd">
+<students>
+	<univ>
+		서울 성동구 행당동 한양대학교</univ>
+	<student>
+		<sno>
+			s100
+		</sno>
+		<name>unokim</name>
+		<age>28</age>
+		<phone>01-49437--73</phone>
+		<address>서울시 중구 신당동</address>
+	</student>
+</students>
