@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocaion="restriction.xsd">
+	<book id="b1" kind="novel">
+		<title>엄마를 부탁해</title>
+		<author>신경숙</author>
+		<publisher>창비</publisher>
+		<price>10000</price>
+	</book>
+	<book id="b2" kind="computer">
+		<title> 서벌릇</title>
+		<author>심완보</author>
+		<publisher>지앤택</publisher>
+		<price>10000</price>
+	</book>
+
+</booklist>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="substitution-group.xsd">
+	<book>
+		<title>공정하다는 착각</title>
+		<author>마이클 샌델</author>
+	</book>
+	<book>
+		<title>서블렛과 jsp 프로그래밍</title>
+		<author>심완보</author>
+	</book>
+</booklist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="booklist" type="ctBooklist"></xsd:element>
+	<xsd:complexType name="ctBooklist">
+		<xsd:sequence>
+			<xsd:element name="책" type="ctBook2"
+				maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ctBook">
+		<xsd:sequence>
+			<xsd:element name="title" type="xsd:string"></xsd:element>
+			<xsd:element name="author" type="xsd:string"></xsd:element>
+			<xsd:element name="publisher" type="xsd:string"></xsd:element>
+			<xsd:element name="price" type="xsd:string"></xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID"></xsd:attribute>
+		<xsd:attribute name="kind" type="xsd:string"></xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="ctBook2">
+		<xsd:complexContent>
+			<xsd:restriction base="ctBook">
+				<xsd:sequence>
+					<xsd:element name="title" type="xsd:string"></xsd:element>
+					<xsd:element name="author" type="xsd:string"></xsd:element>
+					<xsd:element name="publisher" type="xsd:string"></xsd:element>
+					<xsd:element name="price">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:int">
+								<xsd:minInclusive value="0"></xsd:minInclusive>
+								<xsd:maxInclusive value="100000"></xsd:maxInclusive>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+				</xsd:sequence>
+				<xsd:attribute name="id" type="xsd:ID"></xsd:attribute>
+				<xsd:attribute name="kind">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="computor"></xsd:enumeration>
+							<xsd:enumeration value="novle"></xsd:enumeration>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>
