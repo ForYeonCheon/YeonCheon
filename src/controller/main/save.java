@@ -18,7 +18,6 @@ public class save implements methodFactory
 		path = tmp[0] + "\\DB\\page\\uno.txt";
 		File file = new File(path);
 		FileWriter fileWriter = new FileWriter(file, true);
-
 		String contents = request.getContents();
 		if(contents.contains("&"))
 		{
