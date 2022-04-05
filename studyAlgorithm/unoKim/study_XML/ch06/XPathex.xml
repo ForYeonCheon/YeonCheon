@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+	<student sno="s100">
+		<name>unokim</name>
+		<age>21</age>
+	</student>
+	<student sno="s200">
+		<name>kimuno</name>
+		<age>28</age>
+	</student>
+</student>
