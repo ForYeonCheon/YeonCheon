@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tab Menu</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="tab-menu">
+
+		<ul class="tab-menu__list">
+
+			<li class="tab-menu__item tab-menu__active">
+				<span class="tab-menu__icon">
+					<i class="ri-home-line"></i>
+				</span>
+				<span class="tab-menu__text">Home</span>
+			</li>
+
+			<li class="tab-menu__item">
+				<span class="tab-menu__icon">
+					<i class="ri-heart-3-line"></i></i>
+				</span>
+				<span class="tab-menu__text">Likes</span>
+			</li>
+
+			<li class="tab-menu__item">
+				<span class="tab-menu__icon">
+					<i class="ri-search-line"></i>
+				</span>
+				<span class="tab-menu__text">Search</span>
+			</li>
+
+			<li class="tab-menu__item">
+				<span class="tab-menu__icon">
+					<i class="ri-user-line"></i>
+				</span>
+				<span class="tab-menu__text">Profile</span>
+			</li>
+		</ul>
+
+	</div>
+
+	<a href="https://www.youtube.com/watch?v=dtGTN7kld0c" target="_blank" class="btn-watch-now">
+		<i class="ri-youtube-fill"></i>
+	</a>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
+<style>
+*,
+*::after,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary :#19adbb;
+    --color-primary-ligth : rgba(34, 167, 179, 0.2);
+    --color-secondary : #f7f7f7;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-primary);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+
+.tab-menu{
+    border-radius: 10rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-secondary);
+    box-shadow: 0 0 1rem rgba(0,0,0,.1);
+}
+
+
+.tab-menu__list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+
+.tab-menu__item{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    color: #222;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.tab-menu__icon{
+    transform: translateY(2px);
+}
+
+.tab-menu__text{
+    display: none;
+}
+
+.tab-menu__active{
+    padding: 1rem 2rem;
+    color: var(--color-primary);
+    background-color: var(--color-primary-ligth)
+}
+
+.tab-menu__active .tab-menu__text{
+    display: block;
+}
+
+.btn-watch-now{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    text-decoration: none;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2.4rem;
+    color: red;
+    background-color: #fff;
+}
+
+.btn-watch-now::after,
+.btn-watch-now::before{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    animation: scaling 1s infinite;
+    z-index: -1;
+}
+
+
+.btn-watch-now::before{
+    animation: scaling 1s .2s infinite;
+}
+
+
+@keyframes scaling {
+    0%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    100%{
+        transform: translate(-50%,-50%) scale(1.2);
+        opacity: 0;
+    }
+}
+</style>
+<script>
+const menuItems = document.querySelectorAll('.tab-menu__item');
+
+let previousSelectedItem = menuItems[0];
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        previousSelectedItem?.classList.remove('tab-menu__active')
+        previousSelectedItem = item;
+        item.classList.add('tab-menu__active');
+    })
+})
+</script>
