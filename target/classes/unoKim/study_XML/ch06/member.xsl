@@ -5,7 +5,7 @@
 		<H2 align="center">왕실 회원정보</H2>
 		<TABLE border="1" align="center" width="80%">
 			<TR>
-				<TH>NO.</TH>
+	t			<TH>NO.</TH>
 				<TH>이름</TH>
 				<TH>번호</TH>
 				<TH>전화번호</TH>
