@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT 과제 (자기소개)*>
+<!ELEMENT 자기소개 (개인정보, 회사, 수업에관해, 사이버대학교에관해)>
+
+<!ELEMENT 개인정보 (학번, 이름, 소속학과, 학년, 성별, 거주지역)>
+<!ELEMENT 학번 (#PCDATA)>
+<!ELEMENT 이름 (#PCDATA)>
+<!ELEMENT 소속학과 (#PCDATA)>
+<!ELEMENT 학년 (#PCDATA)>
+<!ELEMENT 성별 (#PCDATA)>
+<!ELEMENT 거주지역 (#PCDATA)>
+
+<!ELEMENT 회사 (소속회사, 부서, 주된업무)>
+<!ELEMENT 소속회사 (#PCDATA)>
+<!ELEMENT 부서 (#PCDATA)>
+<!ELEMENT 주된업무 (#PCDATA)>
+
+<!ELEMENT 수업에관해 (해당과목을_선정한_이유, 교수에게_바라는_내용)>
+<!ELEMENT 사이버대학교에관해 (장점, 단점, 잘_선택했다고_느낄_때, 선택에_후회될_때, 한사대를_선택한_이유)>
+
+<!ELEMENT 해당과목을_선정한_이유 (#PCDATA)>
+<!ELEMENT 교수에게_바라는_내용 (#PCDATA)>
+<!ELEMENT 장점 (#PCDATA)>
+<!ELEMENT 단점 (#PCDATA)>
+<!ELEMENT 잘_선택했다고_느낄_때 (#PCDATA)>
+<!ELEMENT 선택에_후회될_때 (#PCDATA)>
+<!ELEMENT 한사대를_선택한_이유 (#PCDATA)>
