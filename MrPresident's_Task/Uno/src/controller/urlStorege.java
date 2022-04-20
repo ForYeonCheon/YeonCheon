@@ -5,7 +5,7 @@ public enum urlStorege {
 	index("index");
 
 	private final String value;
-	private final String PACK_PATH = "MrPresident's_Task.Uno.SocketTask.sre.controller.main.";
+	private final String PACK_PATH = "MrPresident's_Task.Uno.src.controller.main.";
 
 	urlStorege(String value) {
 		this.value = value;
