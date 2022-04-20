@@ -27,15 +27,17 @@ public class starter {
 			System.out.println("----------------------------");
 			for (int temp = 0; temp < nList.getLength(); temp++) {
 				Node nNode = nList.item(temp);
-				System.out.println("\nCurrent Element :" + nNode.getNodeName());
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element eElement = (Element) nNode;
-					System.out.println("Employee id : " + eElement.getAttribute("id"));
-					System.out.println(
-							"First Name : " + eElement.getElementsByTagName("firstname").item(0).getTextContent());
-					System.out.println(
-							"Last Name : " + eElement.getElementsByTagName("lastname").item(0).getTextContent());
-					System.out.println("Salary : " + eElement.getElementsByTagName("salary").item(0).getTextContent());
+					if (eElement.getAttribute("id").equals("1001")) {
+						System.out.println("Employee id : " + eElement.getAttribute("id"));
+						System.out.println(
+								"First Name : " + eElement.getElementsByTagName("firstname").item(0).getTextContent());
+						System.out.println(
+								"Last Name : " + eElement.getElementsByTagName("lastname").item(0).getTextContent());
+						System.out.println(
+								"Salary : " + eElement.getElementsByTagName("salary").item(0).getTextContent());
+					}
 				}
 			}
 		} catch (IOException e) {
