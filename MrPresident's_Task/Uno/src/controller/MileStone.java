@@ -1,8 +1,8 @@
+package Uno.src.controller;
 
 import java.lang.reflect.Method;
 
 import Uno.src.server.HttpRequest;
-import Uno.src.controller.urlStorege;
 
 public class MileStone {
 	public static HttpRequest checkUrlAndHandle(HttpRequest request) throws Exception {
