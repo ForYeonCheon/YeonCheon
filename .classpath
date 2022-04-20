@@ -5,7 +5,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="study!!"/>
+	<classpathentry kind="src" path="Let&apos;s_Study!!"/>
 	<classpathentry kind="src" path="MrPresident&apos;s_Task"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
