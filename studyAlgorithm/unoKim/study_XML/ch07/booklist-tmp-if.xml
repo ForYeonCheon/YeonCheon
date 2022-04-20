@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-styesheet type="text/xsl" href="booklist-template.xsl"?>
+<booklist>
+	<book kind="컴퓨터">
+		<title>서블릿과 JSP 프로그래밍</title>
+		<autor>심완보</autor>
+		<publisher>지액북</publisher>
+		<price>15000</price>
+	</book>
+	<book kind="소설">
+		<title>서블릿과 JSP 프로그래밍</title>
+		<autor>심완보</autor>
+		<publisher>지액북</publisher>
+		<price>15000</price>
+	</book>
+	<book kind="컴퓨터">
+		<title>서블릿과 JSP 프로그래밍</title>
+		<autor>심완보</autor>
+		<publisher>지액북</publisher>
+		<price>15000</price>
+	</book>
+</booklist>
