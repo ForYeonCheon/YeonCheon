@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<company>
-	<employee id="1001">
-		<firstname>Tony</firstname>
-		<lastname>Black</lastname>
-		<salary>100000</salary>
-	</employee>
-	<employee id="2001">
-		<firstname>Amy</firstname>
-		<lastname>Green</lastname>
-		<salary>200000</salary>
-	</employee>
-</company>
+<Users>
+	<userId id="koria189">
+		<password>test1234</password>
+		<name>unoKim</name>
+		<server>A</server>
+	</userId>
+	<userId id="zhfldk014745">
+		<password>qwe1245</password>
+		<name>GreenPark</name>
+		<server>B</server>
+	</userId>
+</Users>
