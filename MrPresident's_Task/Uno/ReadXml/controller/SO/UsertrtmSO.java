@@ -9,7 +9,7 @@ public class UsertrtmSO {
 		loginBO = new LoginBO();
 	}
 
-	public boolean Login(String id, String password) {
+	public boolean checkUser(String id, String password) {
 		return loginBO.checkUser(id, password);
 	}
 }

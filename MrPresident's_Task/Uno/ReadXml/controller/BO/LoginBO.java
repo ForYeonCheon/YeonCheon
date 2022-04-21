@@ -17,14 +17,18 @@ public class LoginBO {
 			System.out.println("user id : " + id);
 			return true;
 		}
+		System.out.println("로그인 실패");
 		return false;
 	}
 
 	private boolean checkPassword(GetXml getXml, String id, String password) {
 		if (getXml.getUserInfo().get(id).get("password").equals(password)) {
 			System.out.println("password conform : agreement");
+			System.out.println("로그인 성공");
 			return true;
+		} else {
+			System.out.println("로그인 실패");
+			return false;
 		}
-		return false;
 	}
 }
