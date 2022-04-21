@@ -1,33 +1,19 @@
 package Uno.ReadXml;
 
-import Uno.ReadXml.controller.GetXml;
+import Uno.ReadXml.controller.SO.UsertrtmSO;
 
 public class starter {
 
-	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-		starter starter = new starter();
+	static String id = "koria189";
+	static String password = "test1234";
 
-		String id = null;
-		String password = null;
-		if (starter.checkUser(id, password)) {
+	public static void main(String[] args) throws Exception {
+		UsertrtmSO userSO = new UsertrtmSO();
+		// TODO Auto-generated method stub
+		if (userSO.Login(id, password)) {
 			System.out.println("로그인 성공");
 		} else {
 			System.out.println("로그인 실패");
 		}
-	}
-
-	boolean checkUser(String id, String passWord) {
-		GetXml getXml = new GetXml();
-		id = "koria189";
-		passWord = "test1234";
-		if (getXml.getUserInfo().containsKey(id)) {
-			System.out.println("user id : " + id);
-			if (getXml.getUserInfo().get(id).get("password").equals(passWord)) {
-				System.out.println("password conform : agreement");
-			}
-			return true;
-		}
-		return false;
 	}
 }
