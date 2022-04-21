@@ -28,7 +28,7 @@ public class GetXml {
 	private synchronized void setUserInfo() {
 		try {
 			String directoryName = System.getProperty("user.dir") + "\\MrPresident's_Task\\Uno\\ReadXml\\XmlFiles\\";
-			File file = new File(directoryName + "Diablo4.xml");
+			File file = new File(directoryName + "Diablo4-UserInfo.xml");
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			Document document = db.parse(file);
