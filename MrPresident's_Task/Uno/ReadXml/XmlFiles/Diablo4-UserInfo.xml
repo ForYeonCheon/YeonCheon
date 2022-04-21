@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE Users SYSTEM "Diablo4-dtd.dtd">
+<!DOCTYPE Users SYSTEM "Diablo4-UserInfo-dtd.dtd">
 <Users>
 	<userId id="koria189">
 		<password>test1234</password>

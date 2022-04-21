@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Users (userId)*>
+
+<!ELEMENT userId (password, name, server)>
+
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT server (#PCDATA)>
+
+<!ATTLIST userId id CDATA #REQUIRED >
