@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE A-server SYSTEM "A-server-dtd.dtd">
+<A-server>
+	<charactor id="koria189">
+		<nickname>비바체</nickname>
+		<level>29</level>
+		<job>팔라딘</job>
+		<hp max="100">80</hp>
+		<equipment>
+			<weapon>
+				<damage>60</damage>
+				<type>근거리</type>
+			</weapon>
+			<shield max="100">
+				<defence>20</defence>
+				<durability>100</durability>
+			</shield>
+			<armour max="100">
+				<defence>30</defence>
+				<durability>100</durability>
+			</armour>
+		</equipment>
+	</charactor>
+</A-server>
