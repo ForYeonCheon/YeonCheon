@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT A-server (charactor)*>
+
+<!ELEMENT charactor (nickname, level, job, hp, equipment)>
+
+<!ELEMENT nickname (#PCDATA)>
+<!ELEMENT level (#PCDATA)>
+<!ELEMENT job (#PCDATA)>
+<!ELEMENT hp (#PCDATA)>
+<!ELEMENT equipment (weapon, shield, armour)>
+
+<!ELEMENT weapon (damage, type)>
+<!ELEMENT damage (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+
+<!ELEMENT shield (defence, durability)>
+<!ELEMENT armour (defence, durability)>
+
+<!ELEMENT defence (#PCDATA)>
+<!ELEMENT durability (#PCDATA)>
+
+<!ATTLIST charactor id CDATA #REQUIRED >
+<!ATTLIST hp max CDATA #REQUIRED >
+<!ATTLIST shield max CDATA #REQUIRED >
+<!ATTLIST armour max CDATA #REQUIRED >
