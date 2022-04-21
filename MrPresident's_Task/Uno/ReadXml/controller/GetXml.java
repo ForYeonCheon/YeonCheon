@@ -25,7 +25,7 @@ public class GetXml {
 		return userInfo;
 	}
 
-	private void setUserInfo() {
+	private synchronized void setUserInfo() {
 		try {
 			String directoryName = System.getProperty("user.dir") + "\\MrPresident's_Task\\Uno\\ReadXml\\XmlFiles\\";
 			File file = new File(directoryName + "Diablo4.xml");
