@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<!DOCTYPE A-server SYSTEM "A-server-dtd.dtd">
-<A-server>
+<!DOCTYPE Server SYSTEM "server-dtd.dtd">
+<Server id="A-server">
 	<charactor id="koria189">
 		<nickname>비바체</nickname>
 		<level>29</level>
@@ -21,4 +21,4 @@
 			</armour>
 		</equipment>
 	</charactor>
-</A-server>
+</Server>

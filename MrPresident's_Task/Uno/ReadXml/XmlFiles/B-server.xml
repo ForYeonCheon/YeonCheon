@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <!DOCTYPE Server SYSTEM "server-dtd.dtd">
-<Server id="A-server">
-	<charactor id="koria189">
-		<nickname>비바체</nickname>
+<Server id="B-server">
+	<charactor id="zhfldk014745">
+		<nickname>케이토피아</nickname>
 		<level>29</level>
-		<job>팔라딘</job>
-		<hp max="100">80</hp>
+		<job>소서리스</job>
+		<hp max="100">100</hp>
 		<equipment>
 			<weapon>
-				<damage>60</damage>
-				<type>근거리</type>
+				<damage>70</damage>
+				<type>마법</type>
 			</weapon>
 			<shield max="100">
-				<defence>20</defence>
+				<defence>10</defence>
 				<durability>100</durability>
 			</shield>
 			<armour max="100">
-				<defence>30</defence>
+				<defence>10</defence>
 				<durability>100</durability>
 			</armour>
 		</equipment>
