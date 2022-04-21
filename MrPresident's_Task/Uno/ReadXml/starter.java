@@ -11,11 +11,14 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import Uno.ReadXml.controller.GetXml;
+
 public class starter {
 
 	public static void main(String[] args) throws Exception {
 		starter starter = new starter();
-		
+		GetXml getXml = new GetXml();
+		getXml.getUserInfo();
 		// TODO Auto-generated method stub
 		try {
 			String directoryName = System.getProperty("user.dir") + "\\MrPresident's_Task\\Uno\\ReadXml\\XmlFiles\\";
@@ -63,6 +66,7 @@ public class starter {
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				Element eElement = (Element) nNode;
 				if (eElement.getAttribute("id").equals(id)) {
+					eElement.getChildNodes();
 					System.out.println("user id : " + eElement.getAttribute("id"));
 					checkPassword(eElement, passWord);
 					return true;
