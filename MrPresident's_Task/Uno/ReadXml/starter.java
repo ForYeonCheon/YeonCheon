@@ -8,6 +8,5 @@ public class starter {
 		// TODO Auto-generated method stub
 		/* 로그인 */
 		Login.doLogin();
-		/* 로그인종료 */
 	}
 }
