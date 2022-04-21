@@ -4,11 +4,11 @@
 	<userId id="koria189">
 		<password>test1234</password>
 		<name>unoKim</name>
-		<server>A</server>
+		<server>A-server</server>
 	</userId>
 	<userId id="zhfldk014745">
 		<password>qwe1245</password>
 		<name>GreenPark</name>
-		<server>B</server>
+		<server>B-server</server>
 	</userId>
 </Users>
