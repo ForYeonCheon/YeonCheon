@@ -19,16 +19,23 @@ public class XMLTest2 {
 		Document xmldoc = parser.parse(XML);
 		Element root = xmldoc.getDocumentElement();
 		System.out.println(root);
+		System.out.println("숫 : " + root.getChildNodes().getLength());
 		getNode(root);
 	}
 
 	public static void getNode(Node n) {
-		for (Node ch = n.getFirstChild(); ch != null; ch = ch.getNextSibling()) {
-			if (ch.getNodeType() == Node.ELEMENT_NODE) {
-				System.out.println(ch.getNodeName());
-				getNode(ch);
-			} else if (ch.getNodeType() == Node.TEXT_NODE && ch.getNodeValue().trim().length() != 0) {
-				System.out.println(ch.getNodeValue());
+		for (int i = 0; i < n.getChildNodes().getLength(); i++) {
+			if (n.getChildNodes().item(i).getNodeType() == Node.ELEMENT_NODE) {
+				Element eElement = (Element) n.getChildNodes().item(i);
+				String id = eElement.getAttribute("id");
+				if (!(id.equals("") || id.length() == 0)) {
+					System.out.println("엘리멘트의 id : " + eElement.getAttribute("id"));
+				}
+				System.out.println(n.getChildNodes().item(i).getNodeName());
+				getNode(n.getChildNodes().item(i));
+			} else if (n.getChildNodes().item(i).getNodeType() == Node.TEXT_NODE
+					&& n.getChildNodes().item(i).getNodeValue().trim().length() != 0) {
+				System.out.println(n.getChildNodes().item(i).getNodeValue());
 			}
 		}
 	}
