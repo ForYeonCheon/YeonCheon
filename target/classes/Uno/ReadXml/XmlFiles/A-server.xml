@@ -21,4 +21,44 @@
 			</armour>
 		</equipment>
 	</charactor>
+	<charactor id="koria189">
+		<nickname>제노코</nickname>
+		<level>21</level>
+		<job>바바리안</job>
+		<hp max="100">90</hp>
+		<equipment>
+			<weapon>
+				<damage>70</damage>
+				<type>근거리</type>
+			</weapon>
+			<shield max="100">
+				<defence>30</defence>
+				<durability>100</durability>
+			</shield>
+			<armour max="100">
+				<defence>40</defence>
+				<durability>100</durability>
+			</armour>
+		</equipment>
+	</charactor>
+	<charactor id="koria189">
+		<nickname>와이엠텍</nickname>
+		<level>33</level>
+		<job>아마존</job>
+		<hp max="100">80</hp>
+		<equipment>
+			<weapon>
+				<damage>40</damage>
+				<type>원거리</type>
+			</weapon>
+			<shield max="100">
+				<defence>20</defence>
+				<durability>100</durability>
+			</shield>
+			<armour max="100">
+				<defence>20</defence>
+				<durability>100</durability>
+			</armour>
+		</equipment>
+	</charactor>
 </Server>
