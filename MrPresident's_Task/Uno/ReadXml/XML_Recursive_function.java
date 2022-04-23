@@ -9,7 +9,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-public class XMLTest2 {
+public class XML_Recursive_function {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		String directoryName = System.getProperty("user.dir") + "\\MrPresident's_Task\\Uno\\ReadXml\\XmlFiles\\";
@@ -18,8 +18,12 @@ public class XMLTest2 {
 		DocumentBuilder parser = dbf.newDocumentBuilder();
 		Document xmldoc = parser.parse(XML);
 		Element root = xmldoc.getDocumentElement();
-		System.out.println(root);
-		System.out.println("숫 : " + root.getChildNodes().getLength());
+		String welcome = "| $$$ WELCOME TO DIABLO 4  $$$ This " + root.getTagName() + " : " + root.getAttribute("id")
+				+ "|";
+		System.out.println(welcome);
+		for (int i = 0; i < welcome.length(); i++)
+			System.out.print("-");
+		System.out.println();
 		getNode(root);
 	}
 
@@ -28,14 +32,29 @@ public class XMLTest2 {
 			if (n.getChildNodes().item(i).getNodeType() == Node.ELEMENT_NODE) {
 				Element eElement = (Element) n.getChildNodes().item(i);
 				String id = eElement.getAttribute("id");
+				String innerId = "";
 				if (!(id.equals("") || id.length() == 0)) {
-					System.out.println("엘리멘트의 id : " + eElement.getAttribute("id"));
+					innerId = " id : " + eElement.getAttribute("id");
+					System.out.println(n.getChildNodes().item(i).getNodeName() + innerId);
+				} else {
+					System.out.print(n.getChildNodes().item(i).getNodeName() + " : ");
 				}
-				System.out.println(n.getChildNodes().item(i).getNodeName());
 				getNode(n.getChildNodes().item(i));
 			} else if (n.getChildNodes().item(i).getNodeType() == Node.TEXT_NODE
 					&& n.getChildNodes().item(i).getNodeValue().trim().length() != 0) {
-				System.out.println(n.getChildNodes().item(i).getNodeValue());
+				if (!n.getChildNodes().item(i).getNodeValue().equals("")
+						&& n.getChildNodes().item(i).getNodeValue().length() != 0) {
+					System.out.println(n.getChildNodes().item(i).getNodeValue());
+				}
+			} else {
+				if (n.getChildNodes().item(i).getNextSibling() != null
+						&& n.getChildNodes().item(i).getNextSibling().getNodeValue() != null
+						&& n.getChildNodes().item(i).getNextSibling().getNodeValue().equals("")
+						&& n.getChildNodes().item(i).getNextSibling().getNodeValue().length() != 0) {
+					System.out.print("		");
+				} else {
+					System.out.println();
+				}
 			}
 		}
 	}
