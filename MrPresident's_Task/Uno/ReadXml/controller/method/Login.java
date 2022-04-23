@@ -29,14 +29,24 @@ public class Login {
 		UsertrtmSO userSO = new UsertrtmSO();
 		Scanner sc = new Scanner(System.in);
 		while (loginFlag) {
+			System.out.print("If you want to go out this program, Please enter the \":q\" word\n");
 			System.out.print("Input User Id : ");
 			id = sc.nextLine();
+			programOut(id);
 			System.out.print("\nInput User Password : ");
 			password = sc.nextLine();
+			programOut(password);
 			if (userSO.checkUser(id, password)) {
 				loginFlag = !loginFlag;
 			}
 		}
 		sc.close();
+	}
+
+	private void programOut(String input) {
+		if (input.equalsIgnoreCase(":q")) {
+			System.out.println("Program is out...");
+			System.exit(0);
+		}
 	}
 }
