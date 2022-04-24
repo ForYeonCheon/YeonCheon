@@ -2,13 +2,9 @@
 <!DOCTYPE booklist SYSTEM "ex2-2.dtd">
 <booklist>
 	<book>
-		<title>
-			Java &amp; XML 3%lt; 5
-		</title>
-		<author>
-			Mr. #x9 hong
-		</author>
-		<publisher>preshell </publisher>
+		<title>Java XML</title>
+		<author>Mr.hong</author>
+		<publisher>preshell</publisher>
 		<price>23,000</price>
 	</book>
 </booklist>
