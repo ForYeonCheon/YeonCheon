@@ -7,6 +7,15 @@ import Uno.ReadXml.controller.SO.UsertrtmSO;
 public class Login {
 	static String id;
 	static String password;
+
+	public static String getPassword() {
+		return password;
+	}
+
+	public static void setPassword(String password) {
+		Login.password = password;
+	}
+
 	static boolean loginFlag = true;
 
 	public static void setUserId(String id) {
@@ -37,6 +46,8 @@ public class Login {
 			password = sc.nextLine();
 			programOut(password);
 			if (userSO.checkUser(id, password)) {
+				setUserId(id);
+				setPassword(password);
 				loginFlag = !loginFlag;
 			}
 		}
