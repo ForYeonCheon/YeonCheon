@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE Server SYSTEM "server-dtd.dtd">
 <Server id="Rouge-Camp">
-	<charactor id="koria189">
+	<charactor id="koria189" pw='qwe'>
 		<nickname>비바체</nickname>
 		<level>29</level>
 		<job>팔라딘</job>
@@ -37,26 +37,6 @@
 			</shield>
 			<armour>
 				<defence>40</defence>
-				<durability>100</durability>
-			</armour>
-		</equipment>
-	</charactor>
-	<charactor id="uno123">
-		<nickname>와이엠텍</nickname>
-		<level>33</level>
-		<job>아마존</job>
-		<hp>80</hp>
-		<equipment>
-			<weapon>
-				<damage>40</damage>
-				<type>원거리</type>
-			</weapon>
-			<shield>
-				<defence>20</defence>
-				<durability>100</durability>
-			</shield>
-			<armour>
-				<defence>20</defence>
 				<durability>100</durability>
 			</armour>
 		</equipment>

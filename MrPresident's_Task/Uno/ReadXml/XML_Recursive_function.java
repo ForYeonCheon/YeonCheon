@@ -9,7 +9,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 public class XML_Recursive_function {
 	public static void main(String[] args) throws Exception {
@@ -33,13 +32,15 @@ public class XML_Recursive_function {
 		for (int i = 0; i < n.getChildNodes().getLength(); i++) {
 			if (n.getChildNodes().item(i).getNodeType() == Node.ELEMENT_NODE) {
 				Element eElement = (Element) n.getChildNodes().item(i);
-				String id = eElement.getAttribute("id");
-				NamedNodeMap nas = eElement.getAttributes();
-				String a = nas.item(0).toString().split("=")[0];
-				String innerId = "";
-				if (!(id.equals("") || id.length() == 0)) {
-					innerId = " id : " + eElement.getAttribute("id");
-					System.out.println(n.getChildNodes().item(i).getNodeName() + innerId);
+				String cData = null;
+				if (eElement.hasAttributes()) {
+					NamedNodeMap nas = eElement.getAttributes();
+					System.out.print(n.getChildNodes().item(i).getNodeName());
+					for (int j = 0; j < nas.getLength(); j++) {
+						cData = nas.item(j).toString().split("=")[0];
+						System.out.print(" " + cData + " : " + eElement.getAttribute(cData));
+					}
+					System.out.println();
 				} else {
 					System.out.print(n.getChildNodes().item(i).getNodeName() + " : ");
 				}
