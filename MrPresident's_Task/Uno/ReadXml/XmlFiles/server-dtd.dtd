@@ -20,7 +20,7 @@
 <!ELEMENT durability (#PCDATA)>
 
 <!ATTLIST Server id CDATA #REQUIRED >
-<!ATTLIST charactor id CDATA #REQUIRED >
-<!ATTLIST hp max CDATA #REQUIRED >
-<!ATTLIST shield max CDATA #REQUIRED >
-<!ATTLIST armour max CDATA #REQUIRED >
+<!ATTLIST charactor id CDATA #IMPLIED>
+<!ATTLIST hp max CDATA #IMPLIED>
+<!ATTLIST shield max CDATA #IMPLIED>
+<!ATTLIST armour max CDATA #IMPLIED>

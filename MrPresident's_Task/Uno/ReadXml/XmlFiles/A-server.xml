@@ -5,17 +5,17 @@
 		<nickname>비바체</nickname>
 		<level>29</level>
 		<job>팔라딘</job>
-		<hp max="100">80</hp>
+		<hp>80</hp>
 		<equipment>
 			<weapon>
 				<damage>60</damage>
 				<type>근거리</type>
 			</weapon>
-			<shield max="100">
+			<shield>
 				<defence>20</defence>
 				<durability>100</durability>
 			</shield>
-			<armour max="100">
+			<armour>
 				<defence>30</defence>
 				<durability>100</durability>
 			</armour>
@@ -25,17 +25,17 @@
 		<nickname>제노코</nickname>
 		<level>21</level>
 		<job>바바리안</job>
-		<hp max="100">90</hp>
+		<hp>90</hp>
 		<equipment>
 			<weapon>
 				<damage>70</damage>
 				<type>근거리</type>
 			</weapon>
-			<shield max="100">
+			<shield>
 				<defence>30</defence>
 				<durability>100</durability>
 			</shield>
-			<armour max="100">
+			<armour>
 				<defence>40</defence>
 				<durability>100</durability>
 			</armour>
@@ -45,17 +45,17 @@
 		<nickname>와이엠텍</nickname>
 		<level>33</level>
 		<job>아마존</job>
-		<hp max="100">80</hp>
+		<hp>80</hp>
 		<equipment>
 			<weapon>
 				<damage>40</damage>
 				<type>원거리</type>
 			</weapon>
-			<shield max="100">
+			<shield>
 				<defence>20</defence>
 				<durability>100</durability>
 			</shield>
-			<armour max="100">
+			<armour>
 				<defence>20</defence>
 				<durability>100</durability>
 			</armour>
