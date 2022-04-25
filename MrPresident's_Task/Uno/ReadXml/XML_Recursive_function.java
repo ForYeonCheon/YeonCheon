@@ -7,7 +7,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 public class XML_Recursive_function {
 	public static void main(String[] args) throws Exception {
@@ -32,6 +34,8 @@ public class XML_Recursive_function {
 			if (n.getChildNodes().item(i).getNodeType() == Node.ELEMENT_NODE) {
 				Element eElement = (Element) n.getChildNodes().item(i);
 				String id = eElement.getAttribute("id");
+				NamedNodeMap nas = eElement.getAttributes();
+				String a = nas.item(0).toString().split("=")[0];
 				String innerId = "";
 				if (!(id.equals("") || id.length() == 0)) {
 					innerId = " id : " + eElement.getAttribute("id");
@@ -47,13 +51,18 @@ public class XML_Recursive_function {
 					System.out.println(n.getChildNodes().item(i).getNodeValue());
 				}
 			} else {
-				if (n.getChildNodes().item(i).getNextSibling() != null
-						&& n.getChildNodes().item(i).getNextSibling().getNodeValue() != null
-						&& n.getChildNodes().item(i).getNextSibling().getNodeValue().equals("")
-						&& n.getChildNodes().item(i).getNextSibling().getNodeValue().length() != 0) {
-					System.out.print("		");
-				} else {
-					System.out.println();
+				try {
+					if (n.getChildNodes().item(i).getNextSibling() == null
+							|| n.getChildNodes().item(i).getNextSibling().getNodeValue() == null) {
+						if (n.hasChildNodes()) {
+							System.out.println(n);
+						}
+					} else {
+						System.out.println();
+					}
+				} catch (Exception e) {
+					// TODO: handle exception
+					System.out.println(n);
 				}
 			}
 		}
