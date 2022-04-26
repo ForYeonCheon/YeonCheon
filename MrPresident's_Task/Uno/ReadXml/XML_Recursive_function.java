@@ -1,6 +1,7 @@
 package Uno.ReadXml;
 
 import java.io.File;
+import java.util.LinkedList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -14,7 +15,8 @@ public class XML_Recursive_function
 	{
 		public static void main(String[] args) throws Exception
 		{
-			// TODO Auto-generated method stub
+			LinkedList<String> lkList = new LinkedList<String>();
+			
 			String directoryName = System.getProperty("user.dir") + "\\MrPresident's_Task\\Uno\\ReadXml\\XmlFiles\\";
 			File XML = new File(directoryName + "A-server.xml");
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
