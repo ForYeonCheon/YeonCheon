@@ -9,6 +9,19 @@ class Study
 		System.out.println("교수 : " + teacher);
 	}
 }
+class ClassA
+{
+	void a()
+	{
+		System.out.println("Hello");
+		return;
+	}
+
+	void b()
+	{
+		a();
+	}
+}
 class Sub_java extends Study
 {
 	int credit;
@@ -31,7 +44,8 @@ public class Study_java
 		Sub_java.teacher = "한사대";
 		Sub_java.credit = 3;
 		Sub_java.printJV();
-
+		ClassA oba = new ClassA(); // 오브젝트 oba 생성
+		oba.b(); // 메소드 b 호출
 	}
 
 }
