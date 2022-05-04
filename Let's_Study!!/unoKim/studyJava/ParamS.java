@@ -24,7 +24,7 @@ class EJ
 		jj.bye();
 	}
 }
-public class ParamS
+public class ParamS<T>
 {
 
 	public static void main(String[] args)
