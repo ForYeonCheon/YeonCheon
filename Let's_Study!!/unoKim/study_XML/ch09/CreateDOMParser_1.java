@@ -5,6 +5,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 public class CreateDOMParser_1
 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args)
 	{
 		// DOM 파서 공장 생성
