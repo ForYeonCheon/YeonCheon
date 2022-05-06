@@ -2,10 +2,10 @@
 <!DOCTYPE booklist SYSTEM "bml.dtd">
 <booklist>
 	<book kind="컴퓨터">
-		<title>자바의정석</title>
-		<author>신경숙</author>
+		<title>자바의정석3</title>
+		<author>남궁성</author>
 		<publisher>창비</publisher>
-		<price>10,000</price>
+		<price>20,000</price>
 	</book>
 	<book kind="소설">
 		<title>소나기</title>
