@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist SYSTEM "bml.dtd">
+<booklist>
+	<book kind="컴퓨터">
+		<title>자바의정석</title>
+		<author>신경숙</author>
+		<publisher>창비</publisher>
+		<price>10,000</price>
+	</book>
+	<book kind="소설">
+		<title>소나기</title>
+		<author>황순원</author>
+		<publisher>창비</publisher>
+		<price>15,000</price>
+	</book>
+	<book kind="컴퓨터">
+		<title>안드로이드 프로그래밍</title>
+		<author>마크</author>
+		<publisher>에이콘</publisher>
+		<price>30,000</price>
+	</book>
+</booklist>
