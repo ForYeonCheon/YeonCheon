@@ -40,7 +40,7 @@ public class MyContentHandler implements ContentHandler
 			}
 			else
 			{
-				System.out.println(qName + " : ");
+				System.out.print(qName + " : ");
 			}
 	}
 
