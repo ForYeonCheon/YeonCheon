@@ -7,7 +7,7 @@ public class UsingStaticSchema
 	public static void main(String[] args) throws Exception
 	{
 		boolean isValidDTD = false;
-		InputSource sourceXmlDtd = new InputSource("");
+		InputSource sourceXmlDtd = new InputSource("Let's_Study!!/unoKim/study_XML/ch12/booklist_dtd.xml");
 		isValidDTD = ValidatorUtil.validateXml(sourceXmlDtd);
 		if (isValidDTD)
 		{
@@ -18,7 +18,7 @@ public class UsingStaticSchema
 			System.out.println("Using DTD : 유효하지 않음");
 		}
 		boolean isValidSchema = true;
-		InputSource sourceXmlSchema = new InputSource("");
+		InputSource sourceXmlSchema = new InputSource("Let's_Study!!/unoKim/study_XML/ch12/booklist_schema.xml");
 		isValidSchema = ValidatorUtil.validateXml(sourceXmlSchema);
 		if (isValidSchema)
 		{

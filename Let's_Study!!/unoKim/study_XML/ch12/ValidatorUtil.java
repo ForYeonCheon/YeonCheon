@@ -1,7 +1,6 @@
 package unoKim.study_XML.ch12;
 
 import javax.xml.XMLConstants;
-import javax.xml.*;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.Source;
