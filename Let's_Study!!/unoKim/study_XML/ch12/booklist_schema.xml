@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="booklist_schema.xsd">
+	<book kind="컴퓨터">
+		<title>유니티와 함께하는 세상</title>
+		<author>심완보</author>
+		<publisher>지앤북</publisher>
+		<price>15000</price>
+	</book>
+	<book kind="소설">
+		<title>셜록 홈즈</title>
+		<author>신경숙</author>
+		<publisher>지앤북</publisher>
+		<price>20000</price>
+	</book>
+	<book kind="컴퓨터">
+		<title>리눅스의 이해</title>
+		<author>남궁성</author>
+		<publisher>한빛소프트</publisher>
+		<price>32000</price>
+	</book>
+</booklist>
