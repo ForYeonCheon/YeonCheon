@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE booklist SYSTEM "booklist.dtd">
+
+<booklist>
+	<book kind="컴퓨터">
+		<title>서블릿과 JSP프로그래밍</title>
+		<author>심완보</author>
+		<publisher>지앤북</publisher>
+		<price>15,000</price>
+	</book>
+	<book kind="소설">
+		<title>엄마를 부탁해</title>
+		<author>신경숙</author>
+		<publisher>지앤북</publisher>
+		<price>20,000</price>
+	</book>
+	<book kind="컴퓨터">
+		<title>자파프로그래밍</title>
+		<author>남궁성</author>
+		<publisher>한빛소프트</publisher>
+		<price>32,000</price>
+	</book>
+</booklist>
